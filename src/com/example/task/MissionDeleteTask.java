@@ -39,7 +39,7 @@ public class MissionDeleteTask extends AsyncTask<Long, Integer, String> {
 				String strResult = EntityUtils.toString(httpEntity, "UTF-8");
 				Log.d("look", "strResult" + strResult);
 
-				return strResult.contains("0") ? "删除失败" : "删除成功";
+				return strResult.contains("0") ? "未发现有关联的工作内容" : "删除成功";
 			}
 
 		} catch (ClientProtocolException e) {

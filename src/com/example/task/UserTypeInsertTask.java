@@ -36,7 +36,7 @@ public class UserTypeInsertTask extends AsyncTask<Long, Integer, String> {
 			if (httpResponse.getStatusLine().getStatusCode() == 200) {
 				HttpEntity httpEntity = httpResponse.getEntity();
 				String strResult = EntityUtils.toString(httpEntity, "UTF-8");
-				Log.d("look", "strResult" + strResult);
+				//Log.d("look", "strResult" + strResult);
 
 				return strResult.contains("0") ? "该类型已存在" : "insertok";
 			}

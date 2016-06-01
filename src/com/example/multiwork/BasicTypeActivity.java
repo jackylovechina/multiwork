@@ -55,13 +55,20 @@ public class BasicTypeActivity extends Activity {
 		});
 		Intent intent = getIntent();
 		userid = intent.getLongExtra("userid", 0);
+		// RefreshList();
+	}
+
+	@Override
+	protected void onResume() {
 		RefreshList();
+		// TODO Auto-generated method stub
+		super.onResume();
 	}
 
 	@Override
 	protected void onRestart() {
 		super.onRestart();
-		RefreshList();
+		// RefreshList();
 	}
 
 	public void onClickAdd(View v) {

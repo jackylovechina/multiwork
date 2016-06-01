@@ -1,6 +1,9 @@
 package com.example.utils;
 
 import com.example.multiwork.R;
+import com.example.task.MissionDeleteTask;
+import com.example.task.UserTypeDeleteTask;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,7 +14,7 @@ public class TypeDeleteDialog {
 	Long typeid;
 	String type;
 
-	public TypeDeleteDialog(Context context, Long userid, Long typeid, String type) {
+	public TypeDeleteDialog(final Context context, final Long userid, final Long typeid, String type) {
 		super();
 		this.context = context;
 		this.typeid = typeid;
@@ -35,6 +38,8 @@ public class TypeDeleteDialog {
 		builder.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
+				new MissionDeleteTask(context).execute(userid, typeid);
+				new UserTypeDeleteTask(context).execute(userid, typeid);
 				dialog.dismiss();
 
 			}
