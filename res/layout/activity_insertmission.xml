@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_user_insertmission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:textColor="#DC143C"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工作类型：" />
+
+        <Spinner
+            android:id="@+id/spinner_usertype_insertmission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工作时间：" />
+
+        <TextView
+            android:id="@+id/textView_date_insertmission"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="#d0d0d0"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center_vertical|end"
+            android:onClick="onClickDate"
+            android:text="date"
+            android:textColor="#cc6600" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dip" />
+
+        <TextView
+            android:id="@+id/textView_time_insertmission"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="#d0d0d0"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center_vertical|end"
+            android:onClick="onClickTime"
+            android:text="time"
+            android:textColor="#cc6600" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工作内容：" />
+
+        <EditText
+            android:id="@+id/textView_content_insertmission"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:hint="context" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickInsert"
+        android:text="insert" />
+
+</LinearLayout>

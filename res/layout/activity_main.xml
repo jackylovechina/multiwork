@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mmfooter_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton_query"
+                style="@style/tab_button_bg"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_query"
+                android:text="@string/radio_query_text"
+                android:textColor="@color/tab_text" />
+
+            <RadioButton
+                android:id="@+id/radioButton_insert"
+                style="@style/tab_button_bg"
+                android:drawableTop="@drawable/tab_insert"
+                android:text="@string/radio_insert_text"
+                android:textColor="@color/tab_text" />
+
+            <RadioButton
+                android:id="@+id/radioButton_set"
+                style="@style/tab_button_bg"
+                android:drawableTop="@drawable/tab_set"
+                android:text="@string/radio_set_text"
+                android:textColor="@color/tab_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>
