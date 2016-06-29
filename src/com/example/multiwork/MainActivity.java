@@ -13,7 +13,7 @@ public class MainActivity extends TabActivity {
 	private TabHost tabHost;
 	private RadioGroup radioGroup;
 	private RadioButton radioButton_query, radioButton_insert, radioButton_set;
-
+//test
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
