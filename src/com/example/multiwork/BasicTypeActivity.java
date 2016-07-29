@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.example.adapter.TypeListAdapter;
 import com.example.domain.WorkType;
-import com.example.task.TypeInsertTask;
 import com.example.utils.TypeDeleteDialog;
 import com.example.task.ExistTypeQueryTask;
 
@@ -19,7 +18,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class BasicTypeActivity extends Activity {
 	private ListView mlistView;
